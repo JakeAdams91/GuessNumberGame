@@ -41,25 +41,25 @@ def comparator(guess, roll, tries):
     if guess == roll:
         tries_funct(tries)
     elif guess < roll:
-        print("you guessed too LOW, try again")
+        print("\n you guessed too LOW, try again \n")
         guess_rand(roll, tries)
     elif guess > roll:
-        print("you guessed too HIGH, try again")
+        print("\n you guessed too HIGH, try again \n")
         guess_rand(roll, tries)
 
 def tries_funct(tries):
     # if less than/equal to 5 attempts
     if tries <= 5:
         # be impressed
-        print("Wow! You guessed it in only", tries, "tries!")
+        print("\n Wow! You guessed it in only", tries, "tries! \n")
     # if more than 5 but less/equal to 10 attempts
     elif tries <= 10:
         # semi-shame user
-        print("Oof, it took you", tries, "attempts to get it right")
+        print("\n Oof, it took you", tries, "attempts to get it right \n")
     # if more than 10 attempts
     else:
         # hard shame the user
-        print("it seriously took you", tries, "guesses to get it right..")
+        print("\n it seriously took you", tries, "guesses to get it right?? \n")
 
 
 def main():
