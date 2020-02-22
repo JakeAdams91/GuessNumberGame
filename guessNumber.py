@@ -39,7 +39,7 @@ def guess_rand(roll, tries):
 # comparator function compares users validated integer against random number generated
 def comparator(guess, roll, tries):
     if guess == roll:
-        # User guessed correct -- call tries_funct() to display tell the user the guessed correct and display # of attempts made. 
+        # User guessed correct -- call tries_funct() to inform user of correct guess and display # of attempts 
         tries_funct(tries)
     elif guess < roll:
         print("\n you guessed too LOW, try again \n")
